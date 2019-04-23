@@ -70,17 +70,6 @@ var AppRoutingModule = /** @class */ (function () {
 
 /***/ }),
 
-/***/ "./src/app/app.component.css":
-/*!***********************************!*\
-  !*** ./src/app/app.component.css ***!
-  \***********************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-module.exports = ".toolbar__container {\r\n  position: abosolute;\r\n  top: 200px;\r\n  bottom: 0;\r\n  left: 0;\r\n  right: 0;\r\n}\r\n\r\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvYXBwLmNvbXBvbmVudC5jc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUE7RUFDRSxtQkFBbUI7RUFDbkIsVUFBVTtFQUNWLFNBQVM7RUFDVCxPQUFPO0VBQ1AsUUFBUTtBQUNWIiwiZmlsZSI6InNyYy9hcHAvYXBwLmNvbXBvbmVudC5jc3MiLCJzb3VyY2VzQ29udGVudCI6WyIudG9vbGJhcl9fY29udGFpbmVyIHtcclxuICBwb3NpdGlvbjogYWJvc29sdXRlO1xyXG4gIHRvcDogMjAwcHg7XHJcbiAgYm90dG9tOiAwO1xyXG4gIGxlZnQ6IDA7XHJcbiAgcmlnaHQ6IDA7XHJcbn1cclxuIl19 */"
-
-/***/ }),
-
 /***/ "./src/app/app.component.html":
 /*!************************************!*\
   !*** ./src/app/app.component.html ***!
@@ -113,8 +102,7 @@ var AppComponent = /** @class */ (function () {
     AppComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
         Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
             selector: 'app-root',
-            template: __webpack_require__(/*! ./app.component.html */ "./src/app/app.component.html"),
-            styles: [__webpack_require__(/*! ./app.component.css */ "./src/app/app.component.css")]
+            template: __webpack_require__(/*! ./app.component.html */ "./src/app/app.component.html")
         })
     ], AppComponent);
     return AppComponent;
@@ -163,7 +151,8 @@ var AppModule = /** @class */ (function () {
                 _angular_platform_browser_animations__WEBPACK_IMPORTED_MODULE_4__["BrowserAnimationsModule"],
                 _app_routing_module__WEBPACK_IMPORTED_MODULE_5__["AppRoutingModule"],
                 _material_material_module__WEBPACK_IMPORTED_MODULE_7__["MaterialModule"],
-                _shared_shared_module__WEBPACK_IMPORTED_MODULE_6__["SharedModule"]
+                _shared_shared_module__WEBPACK_IMPORTED_MODULE_6__["SharedModule"],
+                _shared_shared_module__WEBPACK_IMPORTED_MODULE_6__["SharedModule"].forRoot()
             ],
             providers: [],
             bootstrap: [_app_component__WEBPACK_IMPORTED_MODULE_3__["AppComponent"]]
@@ -200,77 +189,27 @@ var MaterialModule = /** @class */ (function () {
     MaterialModule = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
         Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["NgModule"])({
             declarations: [],
-            imports: [_angular_common__WEBPACK_IMPORTED_MODULE_2__["CommonModule"], _angular_material__WEBPACK_IMPORTED_MODULE_3__["MatAutocompleteModule"],
-                _angular_material__WEBPACK_IMPORTED_MODULE_3__["MatBadgeModule"],
-                _angular_material__WEBPACK_IMPORTED_MODULE_3__["MatBottomSheetModule"],
+            imports: [_angular_common__WEBPACK_IMPORTED_MODULE_2__["CommonModule"],
                 _angular_material__WEBPACK_IMPORTED_MODULE_3__["MatButtonModule"],
                 _angular_material__WEBPACK_IMPORTED_MODULE_3__["MatButtonToggleModule"],
-                _angular_material__WEBPACK_IMPORTED_MODULE_3__["MatCardModule"],
                 _angular_material__WEBPACK_IMPORTED_MODULE_3__["MatCheckboxModule"],
-                _angular_material__WEBPACK_IMPORTED_MODULE_3__["MatChipsModule"],
-                _angular_material__WEBPACK_IMPORTED_MODULE_3__["MatStepperModule"],
-                _angular_material__WEBPACK_IMPORTED_MODULE_3__["MatDatepickerModule"],
-                _angular_material__WEBPACK_IMPORTED_MODULE_3__["MatDialogModule"],
-                _angular_material__WEBPACK_IMPORTED_MODULE_3__["MatDividerModule"],
-                _angular_material__WEBPACK_IMPORTED_MODULE_3__["MatExpansionModule"],
-                _angular_material__WEBPACK_IMPORTED_MODULE_3__["MatGridListModule"],
                 _angular_material__WEBPACK_IMPORTED_MODULE_3__["MatIconModule"],
                 _angular_material__WEBPACK_IMPORTED_MODULE_3__["MatInputModule"],
-                _angular_material__WEBPACK_IMPORTED_MODULE_3__["MatListModule"],
-                _angular_material__WEBPACK_IMPORTED_MODULE_3__["MatMenuModule"],
-                _angular_material__WEBPACK_IMPORTED_MODULE_3__["MatNativeDateModule"],
-                _angular_material__WEBPACK_IMPORTED_MODULE_3__["MatPaginatorModule"],
-                _angular_material__WEBPACK_IMPORTED_MODULE_3__["MatProgressBarModule"],
-                _angular_material__WEBPACK_IMPORTED_MODULE_3__["MatProgressSpinnerModule"],
-                _angular_material__WEBPACK_IMPORTED_MODULE_3__["MatRadioModule"],
                 _angular_material__WEBPACK_IMPORTED_MODULE_3__["MatRippleModule"],
-                _angular_material__WEBPACK_IMPORTED_MODULE_3__["MatSelectModule"],
-                _angular_material__WEBPACK_IMPORTED_MODULE_3__["MatSidenavModule"],
-                _angular_material__WEBPACK_IMPORTED_MODULE_3__["MatSliderModule"],
-                _angular_material__WEBPACK_IMPORTED_MODULE_3__["MatSlideToggleModule"],
-                _angular_material__WEBPACK_IMPORTED_MODULE_3__["MatSnackBarModule"],
-                _angular_material__WEBPACK_IMPORTED_MODULE_3__["MatSortModule"],
-                _angular_material__WEBPACK_IMPORTED_MODULE_3__["MatTableModule"],
-                _angular_material__WEBPACK_IMPORTED_MODULE_3__["MatTabsModule"],
                 _angular_material__WEBPACK_IMPORTED_MODULE_3__["MatToolbarModule"],
                 _angular_material__WEBPACK_IMPORTED_MODULE_3__["MatTooltipModule"],
-                _angular_material__WEBPACK_IMPORTED_MODULE_3__["MatTreeModule"]],
+                _angular_material__WEBPACK_IMPORTED_MODULE_3__["MatSelectModule"]
+            ],
             exports: [
-                _angular_material__WEBPACK_IMPORTED_MODULE_3__["MatAutocompleteModule"],
-                _angular_material__WEBPACK_IMPORTED_MODULE_3__["MatBadgeModule"],
-                _angular_material__WEBPACK_IMPORTED_MODULE_3__["MatBottomSheetModule"],
                 _angular_material__WEBPACK_IMPORTED_MODULE_3__["MatButtonModule"],
                 _angular_material__WEBPACK_IMPORTED_MODULE_3__["MatButtonToggleModule"],
-                _angular_material__WEBPACK_IMPORTED_MODULE_3__["MatCardModule"],
                 _angular_material__WEBPACK_IMPORTED_MODULE_3__["MatCheckboxModule"],
-                _angular_material__WEBPACK_IMPORTED_MODULE_3__["MatChipsModule"],
-                _angular_material__WEBPACK_IMPORTED_MODULE_3__["MatStepperModule"],
-                _angular_material__WEBPACK_IMPORTED_MODULE_3__["MatDatepickerModule"],
-                _angular_material__WEBPACK_IMPORTED_MODULE_3__["MatDialogModule"],
-                _angular_material__WEBPACK_IMPORTED_MODULE_3__["MatDividerModule"],
-                _angular_material__WEBPACK_IMPORTED_MODULE_3__["MatExpansionModule"],
-                _angular_material__WEBPACK_IMPORTED_MODULE_3__["MatGridListModule"],
                 _angular_material__WEBPACK_IMPORTED_MODULE_3__["MatIconModule"],
                 _angular_material__WEBPACK_IMPORTED_MODULE_3__["MatInputModule"],
-                _angular_material__WEBPACK_IMPORTED_MODULE_3__["MatListModule"],
-                _angular_material__WEBPACK_IMPORTED_MODULE_3__["MatMenuModule"],
-                _angular_material__WEBPACK_IMPORTED_MODULE_3__["MatNativeDateModule"],
-                _angular_material__WEBPACK_IMPORTED_MODULE_3__["MatPaginatorModule"],
-                _angular_material__WEBPACK_IMPORTED_MODULE_3__["MatProgressBarModule"],
-                _angular_material__WEBPACK_IMPORTED_MODULE_3__["MatProgressSpinnerModule"],
-                _angular_material__WEBPACK_IMPORTED_MODULE_3__["MatRadioModule"],
                 _angular_material__WEBPACK_IMPORTED_MODULE_3__["MatRippleModule"],
-                _angular_material__WEBPACK_IMPORTED_MODULE_3__["MatSelectModule"],
-                _angular_material__WEBPACK_IMPORTED_MODULE_3__["MatSidenavModule"],
-                _angular_material__WEBPACK_IMPORTED_MODULE_3__["MatSliderModule"],
-                _angular_material__WEBPACK_IMPORTED_MODULE_3__["MatSlideToggleModule"],
-                _angular_material__WEBPACK_IMPORTED_MODULE_3__["MatSnackBarModule"],
-                _angular_material__WEBPACK_IMPORTED_MODULE_3__["MatSortModule"],
-                _angular_material__WEBPACK_IMPORTED_MODULE_3__["MatTableModule"],
-                _angular_material__WEBPACK_IMPORTED_MODULE_3__["MatTabsModule"],
                 _angular_material__WEBPACK_IMPORTED_MODULE_3__["MatToolbarModule"],
                 _angular_material__WEBPACK_IMPORTED_MODULE_3__["MatTooltipModule"],
-                _angular_material__WEBPACK_IMPORTED_MODULE_3__["MatTreeModule"]
+                _angular_material__WEBPACK_IMPORTED_MODULE_3__["MatSelectModule"]
             ],
             providers: [],
         })
@@ -289,7 +228,7 @@ var MaterialModule = /** @class */ (function () {
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<mat-toolbar class=\"mat-elevation-z6\">\n  <button mat-icon-button>\n    <mat-icon aria-label=\"menu\">{{icon}}</mat-icon>\n  </button>\n  <span>Home Quest</span>\n</mat-toolbar>"
+module.exports = "<mat-toolbar class=\"mat-elevation-z6\">\n  <button class=\"filter-button\" (click)=\"toggleFilter()\" mat-icon-button>\n    <mat-icon>filter_list</mat-icon>\n  </button>\n  <span>Home Quest</span>\n</mat-toolbar>"
 
 /***/ }),
 
@@ -300,7 +239,7 @@ module.exports = "<mat-toolbar class=\"mat-elevation-z6\">\n  <button mat-icon-b
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = ".mat-toolbar {\n  background: #720d5d;\n  color: white; }\n\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvc2hhcmVkL2NvbXBvbmVudHMvaGVhZGVyL0Q6XFxsZWFybmluZ3NcXGFuZ3VsYXJcXGhvbWVfcXVlc3RcXGhvbWVxdWVzdC9zcmNcXGFwcFxcc2hhcmVkXFxjb21wb25lbnRzXFxoZWFkZXJcXGhlYWRlci5jb21wb25lbnQuc2NzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQTtFQUNFLG1CQUFtQjtFQUNuQixZQUFZLEVBQUEiLCJmaWxlIjoic3JjL2FwcC9zaGFyZWQvY29tcG9uZW50cy9oZWFkZXIvaGVhZGVyLmNvbXBvbmVudC5zY3NzIiwic291cmNlc0NvbnRlbnQiOlsiLm1hdC10b29sYmFyIHtcclxuICBiYWNrZ3JvdW5kOiAjNzIwZDVkO1xyXG4gIGNvbG9yOiB3aGl0ZTtcclxufVxyXG4iXX0= */"
+module.exports = ".mat-toolbar {\n  background: #720d5d;\n  color: white; }\n\n.filter-button {\n  display: none; }\n\n@media (max-width: 767.98px) {\n    .filter-button {\n      display: block; } }\n\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvc2hhcmVkL2NvbXBvbmVudHMvaGVhZGVyL0Q6XFxsZWFybmluZ3NcXGFuZ3VsYXJcXGhvbWVfcXVlc3RcXGhvbWVxdWVzdC9zcmNcXGFwcFxcc2hhcmVkXFxjb21wb25lbnRzXFxoZWFkZXJcXGhlYWRlci5jb21wb25lbnQuc2NzcyIsInNyYy9hcHAvc2hhcmVkL2NvbXBvbmVudHMvaGVhZGVyL0Q6XFxsZWFybmluZ3NcXGFuZ3VsYXJcXGhvbWVfcXVlc3RcXGhvbWVxdWVzdC9zcmNcXGFwcFxcc3R5bGVzXFxkZXZpY2VzXFxkZXZpY2Uuc2NzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFDQTtFQUNFLG1CQUFtQjtFQUNuQixZQUFZLEVBQUE7O0FBRWQ7RUFDRSxhQUFhLEVBQUE7O0FDcUZYO0lEdEZKO01BR0ksY0FBYyxFQUFBLEVBRWpCIiwiZmlsZSI6InNyYy9hcHAvc2hhcmVkL2NvbXBvbmVudHMvaGVhZGVyL2hlYWRlci5jb21wb25lbnQuc2NzcyIsInNvdXJjZXNDb250ZW50IjpbIkBpbXBvcnQgXCIuLi8uLi8uLi9zdHlsZXMvZGV2aWNlcy9kZXZpY2VcIjtcclxuLm1hdC10b29sYmFyIHtcclxuICBiYWNrZ3JvdW5kOiAjNzIwZDVkO1xyXG4gIGNvbG9yOiB3aGl0ZTtcclxufVxyXG4uZmlsdGVyLWJ1dHRvbntcclxuICBkaXNwbGF5OiBub25lO1xyXG4gIEBpbmNsdWRlIG1lZGlhLWJyZWFrcG9pbnQtZG93bihzbSkge1xyXG4gICAgZGlzcGxheTogYmxvY2s7XHJcbiAgIH1cclxufSIsIi8vIFNtYWxsIHRhYmxldHMgYW5kIGxhcmdlIHNtYXJ0cGhvbmVzIChsYW5kc2NhcGUgdmlldylcclxuJHNjcmVlbi1zbS1taW46IDU3NnB4O1xyXG5cclxuLy8gU21hbGwgdGFibGV0cyAocG9ydHJhaXQgdmlldylcclxuJHNjcmVlbi1tZC1taW46IDc2OHB4O1xyXG5cclxuLy8gVGFibGV0cyBhbmQgc21hbGwgZGVza3RvcHNcclxuJHNjcmVlbi1sZy1taW46IDk5MnB4O1xyXG5cclxuLy8gTGFyZ2UgdGFibGV0cyBhbmQgZGVza3RvcHNcclxuJHNjcmVlbi14bC1taW46IDEyMDBweDtcclxuXHJcbi8vIFNtYWxsIGRldmljZXNcclxuQG1peGluIHNtIHtcclxuICAgIEBtZWRpYSAobWluLXdpZHRoOiAjeyRzY3JlZW4tc20tbWlufSkge1xyXG4gICAgICAgIEBjb250ZW50O1xyXG4gICAgfVxyXG4gfVxyXG5cclxuIC8vIE1lZGl1bSBkZXZpY2VzXHJcbiBAbWl4aW4gbWQge1xyXG4gICAgQG1lZGlhIChtaW4td2lkdGg6ICN7JHNjcmVlbi1tZC1taW59KSB7XHJcbiAgICAgICAgQGNvbnRlbnQ7XHJcbiAgICB9XHJcbiB9XHJcblxyXG4gLy8gTGFyZ2UgZGV2aWNlc1xyXG4gQG1peGluIGxnIHtcclxuICAgIEBtZWRpYSAobWluLXdpZHRoOiAjeyRzY3JlZW4tbGctbWlufSkge1xyXG4gICAgICAgIEBjb250ZW50O1xyXG4gICAgfVxyXG4gfVxyXG5cclxuIC8vIEV4dHJhIGxhcmdlIGRldmljZXNcclxuIEBtaXhpbiB4bCB7XHJcbiAgICBAbWVkaWEgKG1pbi13aWR0aDogI3skc2NyZWVuLXhsLW1pbn0pIHtcclxuICAgICAgICBAY29udGVudDtcclxuICAgIH1cclxuIH1cclxuXHJcblxyXG4gJGdyaWQtY29sdW1uczogMTIgIWRlZmF1bHQ7XHJcbiRncmlkLWd1dHRlci13aWR0aC1iYXNlOiAyNHB4ICFkZWZhdWx0O1xyXG4kZ3JpZC1ndXR0ZXItd2lkdGhzOiAoXHJcbiAgeHM6ICRncmlkLWd1dHRlci13aWR0aC1iYXNlLFxyXG4gIHNtOiAkZ3JpZC1ndXR0ZXItd2lkdGgtYmFzZSxcclxuICBtZDogJGdyaWQtZ3V0dGVyLXdpZHRoLWJhc2UsXHJcbiAgbGc6ICRncmlkLWd1dHRlci13aWR0aC1iYXNlLFxyXG4gIHhsOiAkZ3JpZC1ndXR0ZXItd2lkdGgtYmFzZVxyXG4pICFkZWZhdWx0O1xyXG5cclxuXHJcbiRncmlkLWJyZWFrcG9pbnRzOiAoXHJcbiAgeHM6IDAsXHJcbiAgaXM6IDQwMHB4LFxyXG4gIHNtOiA1NzZweCxcclxuICBtZDogNzY4cHgsXHJcbiAgbGc6IDk5MnB4LFxyXG4gIHhsOiAxMjAwcHgsXHJcbiAgeHhsOiAxNDAwcHgsXHJcbiAgeHh4bDogMTYwMHB4XHJcbik7XHJcblxyXG4kY29udGFpbmVyLW1heC13aWR0aHM6IChcclxuICBpczogMzgwcHgsXHJcbiAgc206IDU0MHB4LFxyXG4gIG1kOiA3MjBweCxcclxuICBsZzogOTYwcHgsXHJcbiAgeGw6IDExNDBweCxcclxuICB4eGw6IDEzMjBweCxcclxuICB4eHhsOiAxNTAwcHhcclxuKTtcclxuXHJcbkBmdW5jdGlvbiBicmVha3BvaW50LW1pbigkbmFtZSwgJGJyZWFrcG9pbnRzOiAkZ3JpZC1icmVha3BvaW50cykge1xyXG4gICRtaW46IG1hcC1nZXQoJGJyZWFrcG9pbnRzLCAkbmFtZSk7XHJcbiAgQHJldHVybiBpZigkbWluICE9IDAsICRtaW4sIG51bGwpO1xyXG59XHJcblxyXG5AZnVuY3Rpb24gYnJlYWtwb2ludC1uZXh0KCRuYW1lLCAkYnJlYWtwb2ludHM6ICRncmlkLWJyZWFrcG9pbnRzLCAkYnJlYWtwb2ludC1uYW1lczogbWFwLWtleXMoJGJyZWFrcG9pbnRzKSkge1xyXG4gICRuOiBpbmRleCgkYnJlYWtwb2ludC1uYW1lcywgJG5hbWUpO1xyXG4gIEByZXR1cm4gaWYoJG4gPCBsZW5ndGgoJGJyZWFrcG9pbnQtbmFtZXMpLCBudGgoJGJyZWFrcG9pbnQtbmFtZXMsICRuICsgMSksIG51bGwpO1xyXG59XHJcblxyXG5AZnVuY3Rpb24gYnJlYWtwb2ludC1tYXgoJG5hbWUsICRicmVha3BvaW50czogJGdyaWQtYnJlYWtwb2ludHMpIHtcclxuICAkbmV4dDogYnJlYWtwb2ludC1uZXh0KCRuYW1lLCAkYnJlYWtwb2ludHMpO1xyXG4gIEByZXR1cm4gaWYoJG5leHQsIGJyZWFrcG9pbnQtbWluKCRuZXh0LCAkYnJlYWtwb2ludHMpIC0gMC4wMnB4LCBudWxsKTtcclxufVxyXG5cclxuQG1peGluIG1lZGlhLWJyZWFrcG9pbnQtZG93bigkbmFtZSwgJGJyZWFrcG9pbnRzOiAkZ3JpZC1icmVha3BvaW50cykge1xyXG4gICRtYXg6IGJyZWFrcG9pbnQtbWF4KCRuYW1lLCAkYnJlYWtwb2ludHMpO1xyXG4gIEBpZiAkbWF4IHtcclxuICAgIEBtZWRpYSAobWF4LXdpZHRoOiAkbWF4KSB7XHJcbiAgICAgIEBjb250ZW50O1xyXG4gICAgfVxyXG4gIH0gQGVsc2Uge1xyXG4gICAgQGNvbnRlbnQ7XHJcbiAgfVxyXG59XHJcblxyXG5AbWl4aW4gbWVkaWEtYnJlYWtwb2ludC11cCgkbmFtZSwgJGJyZWFrcG9pbnRzOiAkZ3JpZC1icmVha3BvaW50cykge1xyXG4gICRtaW46IGJyZWFrcG9pbnQtbWluKCRuYW1lLCAkYnJlYWtwb2ludHMpO1xyXG4gIEBpZiAkbWluIHtcclxuICAgIEBtZWRpYSAobWluLXdpZHRoOiAkbWluKSB7XHJcbiAgICAgIEBjb250ZW50O1xyXG4gICAgfVxyXG4gIH0gQGVsc2Uge1xyXG4gICAgQGNvbnRlbnQ7XHJcbiAgfVxyXG59XHJcblxyXG4iXX0= */"
 
 /***/ }),
 
@@ -316,19 +255,66 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "HeaderComponent", function() { return HeaderComponent; });
 /* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
 /* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
+/* harmony import */ var _services_sidenavigation_service__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../services/sidenavigation.service */ "./src/app/shared/services/sidenavigation.service.ts");
+
 
 
 var HeaderComponent = /** @class */ (function () {
-    function HeaderComponent() {
+    function HeaderComponent(sideNavigationService) {
+        this.sideNavigationService = sideNavigationService;
     }
+    HeaderComponent.prototype.toggleFilter = function () {
+        this.sideNavigationService.toggle();
+    };
     HeaderComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
         Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
             selector: 'app-header',
             template: __webpack_require__(/*! ./header.component.html */ "./src/app/shared/components/header/header.component.html"),
             styles: [__webpack_require__(/*! ./header.component.scss */ "./src/app/shared/components/header/header.component.scss")]
-        })
+        }),
+        tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"]("design:paramtypes", [_services_sidenavigation_service__WEBPACK_IMPORTED_MODULE_2__["SideNavigationService"]])
     ], HeaderComponent);
     return HeaderComponent;
+}());
+
+
+
+/***/ }),
+
+/***/ "./src/app/shared/services/sidenavigation.service.ts":
+/*!***********************************************************!*\
+  !*** ./src/app/shared/services/sidenavigation.service.ts ***!
+  \***********************************************************/
+/*! exports provided: SideNavigationService */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "SideNavigationService", function() { return SideNavigationService; });
+/* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
+
+
+var SideNavigationService = /** @class */ (function () {
+    function SideNavigationService() {
+        /* store the state of the panel. */
+        this.isOpen = false;
+        /** Common service to handle open and close of filter panel. */
+        this.change = new _angular_core__WEBPACK_IMPORTED_MODULE_1__["EventEmitter"]();
+    }
+    /** On toggle flip the state of filter panel. */
+    SideNavigationService.prototype.toggle = function () {
+        this.isOpen = !this.isOpen;
+        this.change.emit(this.isOpen);
+    };
+    tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Output"])(),
+        tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"]("design:type", _angular_core__WEBPACK_IMPORTED_MODULE_1__["EventEmitter"])
+    ], SideNavigationService.prototype, "change", void 0);
+    SideNavigationService = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Injectable"])()
+    ], SideNavigationService);
+    return SideNavigationService;
 }());
 
 
@@ -350,6 +336,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _angular_common__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/common */ "./node_modules/@angular/common/fesm5/common.js");
 /* harmony import */ var _material_material_module__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../material/material.module */ "./src/app/material/material.module.ts");
 /* harmony import */ var _components_header_header_component__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./components/header/header.component */ "./src/app/shared/components/header/header.component.ts");
+/* harmony import */ var _services_sidenavigation_service__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./services/sidenavigation.service */ "./src/app/shared/services/sidenavigation.service.ts");
+
 
 
 
@@ -361,7 +349,8 @@ var SharedModule = /** @class */ (function () {
     SharedModule_1 = SharedModule;
     SharedModule.forRoot = function () {
         return {
-            ngModule: SharedModule_1
+            ngModule: SharedModule_1,
+            providers: [_services_sidenavigation_service__WEBPACK_IMPORTED_MODULE_5__["SideNavigationService"]]
         };
     };
     var SharedModule_1;
@@ -372,7 +361,8 @@ var SharedModule = /** @class */ (function () {
                 _material_material_module__WEBPACK_IMPORTED_MODULE_3__["MaterialModule"]
             ],
             declarations: [_components_header_header_component__WEBPACK_IMPORTED_MODULE_4__["HeaderComponent"]],
-            exports: [_components_header_header_component__WEBPACK_IMPORTED_MODULE_4__["HeaderComponent"]]
+            exports: [_components_header_header_component__WEBPACK_IMPORTED_MODULE_4__["HeaderComponent"]],
+            providers: [_services_sidenavigation_service__WEBPACK_IMPORTED_MODULE_5__["SideNavigationService"]]
         })
     ], SharedModule);
     return SharedModule;
